@@ -1,0 +1,43 @@
+﻿@model MvcKutuphane.Models.Entity.TBL_UYELER
+@{
+    ViewBag.Title = "ÜyeBring";
+    Layout = "~/Views/Shared/_Layoutnew.cshtml";
+}
+@using (Html.BeginForm("ÜyeUpdate", "Üye", FormMethod.Post))
+{
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(k => k.AD)
+        @Html.TextBoxFor(k => k.AD, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(k => k.SOYAD)
+        @Html.TextBoxFor(k => k.SOYAD, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(k => k.KULLANICIADI)
+        @Html.TextBoxFor(k => k.KULLANICIADI, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(k => k.SIFRE)
+        @Html.TextBoxFor(k => k.SIFRE, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(k => k.MAIL)
+        @Html.TextBoxFor(k => k.MAIL, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(k => k.OKUL)
+        @Html.TextBoxFor(k => k.OKUL, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(k => k.TELEFON)
+        @Html.TextBoxFor(k => k.TELEFON, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(k => k.FOTOGRAF)
+        @Html.TextBoxFor(k => k.FOTOGRAF, new { @class = "form-control" })
+        <br />
+    </div>
+    <div>
+        <button class="btn btn-warning">Güncelle</button>
+    </div>
+
+
+}
+
+
+

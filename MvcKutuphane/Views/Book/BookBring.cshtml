@@ -1,0 +1,36 @@
+﻿@model MvcKutuphane.Models.Entity.TBL_KITAP
+@{
+    ViewBag.Title = "BookBring";
+    Layout = "~/Views/Shared/_Layoutnew.cshtml";
+}
+@using (Html.BeginForm("BookUpdate", "Book", FormMethod.Post))
+{
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(y => y.ID)
+        @Html.TextBoxFor(y => y.ID, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(y => y.AD)
+        @Html.TextBoxFor(y => y.AD, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(y => y.KATEGORI)
+        @Html.TextBoxFor(y => y.KATEGORI, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(y => y.YAZAR)
+        @Html.TextBoxFor(y => y.YAZAR, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(y => y.BASIMYIL)
+        @Html.TextBoxFor(y => y.BASIMYIL, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(y => y.YAYINEVI)
+        @Html.TextBoxFor(y => y.YAYINEVI, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(y => y.SAYFA)
+        @Html.TextBoxFor(y => y.SAYFA, new { @class = "form-control" })
+        <br />
+  
+    </div>
+    <div>
+        <button class="btn btn-warning">Güncelle</button>
+    </div>
+
